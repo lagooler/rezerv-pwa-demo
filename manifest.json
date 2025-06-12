@@ -1,0 +1,16 @@
+
+{
+  "name": "Резерв+",
+  "short_name": "Резерв+",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f5f2e8",
+  "theme_color": "#6d4c2d",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

@@ -13,72 +13,95 @@
       background-color: #f5f2e8;
       color: #000;
     }
-    .container {
+    .wrapper {
       max-width: 430px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0 15px;
     }
-    .doc-box {
-      border-radius: 12px;
-      background: #ece6d2;
-      padding: 20px;
-      border: 1px solid #cfc6b0;
-      position: relative;
-    }
-    .title {
-      font-size: 22px;
-      font-weight: bold;
-    }
-    .check {
-      color: green;
-      margin-top: 10px;
-    }
-    .section {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-    .label {
-      color: #555;
-      font-size: 14px;
-    }
-    .value {
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .marquee {
-      background: #6d4c2d;
-      color: white;
-      padding: 10px;
-      font-size: 14px;
-      margin-top: 20px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .footer {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
     }
     .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .logo span {
+      color: #f7941e;
+    }
+    .scan {
+      font-size: 14px;
+    }
+    .card {
+      background-color: #ece6d2;
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+    }
+    .card h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .trident {
       position: absolute;
-      top: 20px;
       right: 20px;
-      width: 28px;
+      top: 20px;
+      width: 24px;
+    }
+    .verified {
+      color: green;
+      font-size: 14px;
+    }
+    .label {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+    .value {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .footer-bar {
+      background: #6d4c2d;
+      color: white;
+      font-size: 13px;
+      padding: 8px;
+      margin-top: 20px;
+      border-radius: 2px;
+    }
+    .person {
+      margin-top: 20px;
+    }
+    .title {
+      font-size: 12px;
+      color: #555;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.3em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="doc-box">
-      <img src="trident.png" class="logo" />
-      <div class="title">Військово-обліковий документ</div>
-      <div class="check">✔ Дані уточнено вчасно</div>
-      <div class="section">
-        <div class="label">Дата народження:</div>
-        <div class="value">24.08.1996</div>
+  <div class="wrapper">
+    <div class="top">
+      <div class="logo">Резерв<span>+</span></div>
+      <div class="scan">Сканувати<br>документ</div>
+    </div>
+    <div class="card">
+      <img src="trident.png" class="trident" />
+      <h1>Військово-обліковий документ</h1>
+      <div class="verified">✔ Дані уточнено вчасно</div>
+      <div class="label">Дата народження:</div>
+      <div class="value">24.08.1996</div>
+      <div class="footer-bar">На обліку • Документ оновлено о 18:42 | 12.06.2025</div>
+      <div class="person">
+        <div class="title">Призовник</div>
+        <div class="name">УКРАЇНЕЦЬ<br>ЯРОСЛАВ<br>ІГОРОВИЧ</div>
       </div>
-      <div class="marquee">На обліку • Документ оновлено о 18:42 | 12.06.2025</div>
-      <div class="footer">УКРАЇНЕЦЬ ЯРОСЛАВ ІГОРОВИЧ</div>
     </div>
   </div>
 </body>
